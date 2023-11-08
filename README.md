@@ -16,13 +16,19 @@ internal class Program
 ...
 ```
 - `Main` 메소드
-  - 게임 데이터 세팅을 하고(`GameDataSetting`) 게임을 시작합니다.(`DisplayGameIntro`)
+    - 게임 데이터 세팅을 하고(`GameDataSetting`) 게임을 시작합니다.(`DisplayGameIntro`)
 - `GameDataSetting` 메소드
+    - `player`와 `inven`을 초기화합니다.
 - `DisplayGameIntro` 메소드
+    - 게임을 시작하고 `상태보기`, `인벤토리` 두 가지 행동을 할 수 있습니다.
 - `DisplayMyInfo` 메소드
+    - `상태보기`를 구현했고 0번을 누르면 `DisplayGameIntro`로 돌아갑니다.
 - `DisplayInventory` 메소드
+    - `인벤토리`를 구현했고 0번을 누르면 `DisplayGameIntro`로 돌아갑니다. 1번을 누르면 장착을 관리하는 `EquipmentManagerDisplay`로 들어갑니다.
 - `EquipmentManagerDisplay` 메소드
-- `CheckValidInput` 메소드 
+    - 정착관리를 할 수 있습니다. 장착 여부에 따라 캐릭터 스탯이 달라집니다. 0번을 누르면 뒤로 돌아갑니다.
+- `CheckValidInput` 메소드
+    - 입력의 예외를 규정합니다.
 ## 기술 스택
 - C#
 - Visual Studio 2022
